@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-2</title>
+</head>
+<body>
+    <!--Create an HTML file with a button and a paragraph element to display the count.
+        Use JavaScript to handle the button click event and increment the count each time the button is clicked.
+        Display the updated count on the paragraph element.-->
+        <p id ="inc">0</p>
+        <button id="but">increment</button>
+
+    <script>
+        
+            let value = document.getElementById("inc");
+            let button = document.getElementById("but");
+            let i=0;
+            button.onclick =  Increment=()=>{
+                i++;  
+                value.innerHTML = i;
+                        
+            };
+    </script>
+</body>
+</html>

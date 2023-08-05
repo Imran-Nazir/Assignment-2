@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-1></title>
+</head>
+<body>
+
+    <!--Create an HTML file with a button and a div element.
+        Use JavaScript to handle the button click event and change the content of the div element.
+        When the button is clicked, display a new message or image in the div element.-->
+
+    <div class="changingElement">
+        <img src="https://www.w3schools.com/html/workplace.jpg" alt="Imran's image" id="myImage1" width="300" height="300"><br/>
+        <p>This is an image collecting from w3schools.com</p>
+        <button onclick="changingDivElement()">Click</button>
+    </div>
+    <script>
+        changingDivElement=()=>{
+            let image = document.getElementById("myImage1");
+            image.src="https://www.w3schools.com/tags/img_girl.jpg";
+        }
+    </script>
+</body>
+</html>

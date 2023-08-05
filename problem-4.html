@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-4</title>
+</head>
+<body>
+    <!--Use this api = https://jsonplaceholder.typicode.com/posts
+        Print or console.log all data using fetch()-->
+    <button onclick="response()">Clcik</button>
+    
+    <script>
+        response=()=>{
+            let URL = "https://jsonplaceholder.typicode.com/posts";
+            let data = {
+                method: "GET",
+            };
+            fetch(URL, data).then(response.json()).catch(error=console.log(error));
+            let config2 = {
+                method: "POST",
+                headers: {"Accept":"application/json", "Content-type":"application/json"},
+                body: JSON.stringify(data)
+            };
+            fetch(URL, config2).then(response => response.json).then(result => console.log(result)).catch(error = console.log(error))
+        }
+
+    </script>
+</body>
+</html>

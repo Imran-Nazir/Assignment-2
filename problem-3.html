@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-3</title>
+</head>
+<body>
+    <!--Create an HTML file with an image element and two buttons.
+        Use JavaScript to handle the button click events and switch the image source when a button is clicked.
+        The first button should change the image to "image1.jpg" and the second button should change it to "image2.jpg".-->
+        
+        <img src="https://www.w3schools.com/html/workplace.jpg" alt="Imran's image" id="myImage1" width="300" height="300"><br/>
+        <button onclick="changingDivElement1()">Image2</button>
+        <button onclick="changingDivElement2()">Image1</button>
+
+        <script>
+            changingDivElement1=()=>{
+                let image2 = document.getElementById("myImage1");
+                image2.src = "https://www.w3schools.com/tags/img_girl.jpg"
+            }
+            changingDivElement2=()=>{
+                let image1 = document.getElementById("myImage1");
+                image1.src = "https://www.w3schools.com/html/workplace.jpg"
+            }
+        </script>
+</body>
+</html>
